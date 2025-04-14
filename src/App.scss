@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  // overflow-x: hidden;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+// _________________________________________________________________________________________________________________
+// _________________________________________________________________________________________________________________
+
+
+.appContainer {
+  max-width: 1536px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  gap: 10px;
+}
+
+
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+
+
+@media (min-width:640px) {
+  .container {
+    max-width: 640px;
+  }
+
+}
+
+@media (min-width:768px) {
+  .container {
+    max-width: 768px;
+  }
+
+}
+
+@media (min-width:1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+}
+
+@media (min-width:1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+}
+
+@media (min-width:1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}

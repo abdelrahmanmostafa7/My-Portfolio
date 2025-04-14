@@ -1,0 +1,56 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column; // important to stack h1 on top
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+
+    .slogan {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(to right, #000000, #e5e5e0, #a0a098, #000000);
+            background-size: 300% auto;
+            background-position: left center;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: background-position 0.9s ease-in-out;
+
+            &:hover {
+                background-position: right center;
+            }
+        }
+    }
+
+    .skillsIcons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        max-width: 1200px;
+
+        img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; // Makes it a circle (ball-like)
+            transition: transform 0.5s ease, box-shadow 0.5s ease ;
+            object-fit: cover;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                transform: scale(1.9); // Adjusted zoom-in effect
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Pop-up feel
+                z-index: 10;
+            }
+        }
+    }
+
+}
