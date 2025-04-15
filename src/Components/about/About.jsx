@@ -8,16 +8,17 @@ import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
 
+
 const listVariants = {
   initial: {
-    y: -100,
+    y: -150,
     opacity: 0,
   },
   animate: {
     y: 0,
-    opacity: 2,
+    opacity: 1,
     transition: {
-      duration: 3,
+      duration: 2,
       staggerChildren: 0.5,
     },
   },

@@ -1,11 +1,11 @@
 .skillsContainer {
     display: flex;
     flex-direction: column; // important to stack h1 on top
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    justify-content: center;
-    margin: 0;
+   gap: 50px;
 
     .slogan {
         width: 100%;
@@ -26,31 +26,32 @@
         }
     }
 
+
     .skillsIcons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); // 6 images in a row
+        gap: 3rem;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
         max-width: 1200px;
-
         img {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%; // Makes it a circle (ball-like)
-            transition: transform 0.5s ease, box-shadow 0.5s ease ;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
             object-fit: cover;
             background-color: #fff;
             padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
             &:hover {
-                transform: scale(1.9); // Adjusted zoom-in effect
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Pop-up feel
-                z-index: 10;
+            transform: scale(1.5); // Zoom-in effect
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); // Pop-up feel
+            filter: brightness(1.1); // Slightly brighten the image
+            z-index: 10;
             }
         }
     }
+
 
 }

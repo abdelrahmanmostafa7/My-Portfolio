@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./Skills.scss";
 import react from "../../assets/react.png";
 import css from "../../assets/css.png";
@@ -17,9 +17,9 @@ import mongo from "../../assets/mongo.png";
 import firebase from "../../assets/firebase.png";
 import express from "../../assets/express.png";
 import tailwind from "../../assets/tailwind.png";
+import three from "../../assets/three.png";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-
 
 const listVariants = {
   initial: {
@@ -60,12 +60,10 @@ const shakeAnimation1 = {
   },
 };
 
-
 const Skills = () => {
-    const ref = useRef();
-    const isInView = useInView(ref);
-    
-  
+  const ref = useRef();
+  const isInView = useInView(ref);
+
   return (
     <motion.div
       className="skillsContainer"
@@ -132,11 +130,37 @@ const Skills = () => {
           alt="Material UI 5"
         />
         <motion.img
+          variants={shakeAnimation}
+          animate="animate"
+          src={three}
+          alt="Three"
+        />
+        <motion.img
           variants={shakeAnimation1}
           animate="animate"
           src={redux}
           alt="Redux"
         />
+
+        <motion.img
+          variants={shakeAnimation}
+          animate="animate"
+          src={framer}
+          alt="Framer Motion"
+        />
+        <motion.img
+          variants={shakeAnimation1}
+          animate="animate"
+          src={figma}
+          alt="Figma"
+        />
+        <motion.img
+          variants={shakeAnimation}
+          animate="animate"
+          src={git}
+          alt="Git"
+        />
+
         <motion.img
           variants={shakeAnimation}
           animate="animate"
@@ -161,27 +185,12 @@ const Skills = () => {
           src={firebase}
           alt="Firebase"
         />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={framer}
-          alt="Framer Motion"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={figma}
-          alt="Figma"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={git}
-          alt="Git"
-        />
       </div>
     </motion.div>
   );
-}
+};
 
-export default Skills
+export default Skills;
+
+
+ 
