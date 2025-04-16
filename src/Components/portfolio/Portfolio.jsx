@@ -69,11 +69,12 @@ const Portfolio = () => {
     damping: 30,
   });
 
+  const opacity = useTransform(scrollYProgress, [0.1, 0], [1, 0]);
 
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <motion.h1 style={{ opacity }}>Featured Works</motion.h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
