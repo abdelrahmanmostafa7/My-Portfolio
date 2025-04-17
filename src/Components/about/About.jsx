@@ -1,17 +1,12 @@
 import React from "react";
 import "./About.scss";
-import about1 from "../../assets/about01.png";
-import about2 from "../../assets/about02.png";
-import about3 from "../../assets/about03.png";
-import about4 from "../../assets/about04.png";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";
-
-
+import about from "../../assets/about.png";
 
 const listVariants = {
   initial: {
-    y: -150,
+    y: -100,
     opacity: 0,
   },
   animate: {
@@ -38,32 +33,30 @@ const About = () => {
         <h1>Make it Create , Make it easy</h1>
       </div>
       <div className="aboutItems">
+        <img src={about} alt="" className="aboutImg" />
+
         <div className="aboutItem">
-          <img src={about2} alt="" className="aboutImg" />
-          <h3>Education</h3>
+          <h2>Education</h2>
+          <p>Graduation from El-Shourok Academy , major of computer science</p>
+          <br />
+          <h2>Web Designer</h2>
           <p>
-           Graduation from El-Shourok Academy , major of computer science
+            I specialize in creating intuitive and visually appealing web
+            designs that enhance user experience.
           </p>
-        </div>
-        <div className="aboutItem">
-          <img src={about3} alt="" className="aboutImg" />
-          <h3>Web Designer</h3>
+          <br />
+
+          <h2>Frontend Developer</h2>
           <p>
-            I specialize in creating intuitive and visually appealing web designs that enhance user experience.
+            I am a frontend developer with a passion for building beautiful and
+            functional UI
           </p>
-        </div>
-        <div className="aboutItem">
-          <img src={about1} alt="" className="aboutImg" />
-          <h3>Frontend Developer</h3>
+          <br />
+
+          <h2>Backend Developer</h2>
           <p>
-           I am a frontend developer with a passion for building beautiful and functional UI
-          </p>
-        </div>
-        <div className="aboutItem">
-          <img src={about4} alt="" className="aboutImg" />
-          <h3>Backend Developer</h3>
-          <p>
-            I develop robust and scalable backend systems to ensure seamless application performance.
+            I develop robust and scalable backend systems to ensure seamless
+            application performance.
           </p>
         </div>
       </div>
@@ -72,4 +65,3 @@ const About = () => {
 };
 
 export default About;
-

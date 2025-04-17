@@ -1,6 +1,6 @@
 import "./Header.scss";
 import Avatar from "../../assets/avatar.png";
-import { Speech } from "./Speech";
+// import { Speech } from "./Speech";
 import Shape from "./Shape";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
@@ -9,7 +9,11 @@ const Header = () => {
   return (
     <div className="headerContainer">
       <div className="left">
-        <Speech />
+        <h5>Hello, I'm</h5>
+        <h1 className="h1">Abdelrahman Zaki</h1>
+        <h2>FullStack Developer</h2>
+        <p>Experienced proficient in MERN Stack</p>
+        {/* <Speech /> */}
         <button className="cvBtn">Download CV</button>
       </div>
       <div className="right">

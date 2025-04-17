@@ -41,16 +41,16 @@ const Single = ({ item }) => {
   return (
     <section>
       <div className="container">
-        <motion.div className="wrapper">
+        <div className="wrapper" >
           <div className="imageContainer">
             <img src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer">
+          <div className="textContainer">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button>See Demo</button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );
