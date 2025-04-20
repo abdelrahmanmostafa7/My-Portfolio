@@ -1,7 +1,25 @@
 // @import "../../app.scss";
+.slogan {
+    width: 100%;
+    text-align: center;
+    margin-bottom:30px ;
 
+    h1 {
+        font-size: 4rem;
+        background: linear-gradient(to right, #000000, #e5e5e0, #a0a098, #000000);
+        background-size: 300% auto;
+        background-position: left center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-position 0.9s ease-in-out;
+
+        &:hover {
+            background-position: right center;
+        }
+    }
+}
 .contact {
-    height: 100vh;
+    
     max-width: 1200px;
     margin: auto;
     display: flex;

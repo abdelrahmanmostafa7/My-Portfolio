@@ -3,7 +3,6 @@ import "./About.scss";
 import { motion, useInView } from "framer-motion";
 import about from "../../assets/about.png";
 
-
 const listVariants = {
   initial: {
     y: -50,
@@ -18,7 +17,6 @@ const listVariants = {
     },
   },
 };
-
 
 const About = () => {
   const ref = useRef();
@@ -44,44 +42,69 @@ const About = () => {
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.8 }}
         />
+        <div className="aboutDesc">
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.4, duration: 0.8 }}
+          >
+            I'm Abdelrahman Mostafa Zaki — a passionate Full-Stack Developer
+            with a solid academic background in Computer Science. I earned my
+            degree from El Shorouk Academy, where I built a strong foundation in
+            data structures, algorithms, database design, operating systems, and
+            network security. These core principles continue to influence how I
+            architect and scale modern web applications.
+          </motion.p>
+          <br />
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.6, duration: 1 }}
+          >
+            My main expertise lies in the MERN stack — MongoDB, Express.js,
+            React.js, and Node.js — complemented by Firebase. This tech combo
+            allows me to build full-stack applications that are efficient,
+            responsive, and user-focused. I have a particular passion for
+            front-end development, where I craft clean, accessible, and
+            intuitive interfaces that follow modern UI/UX best practices.
+          </motion.p>
+          <br />
 
-        <motion.p
-          initial={{ x: 100, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : {}}
-          transition={{ delay: 0.4, duration: 0.8 }}
-        >
-          I'm Abdelrahman Mostafa Zaki, a dedicated Full-Stack Developer with a
-          strong academic foundation in Computer Science, holding a degree from
-          El Shorouk Academy. My education equipped me with in-depth knowledge
-          of data structures, algorithms, database design, operating systems,
-          and network security — principles that continue to shape the way I
-          build and scale modern web applications.
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.8, duration: 1.2 }}
+          >
+            On the back end, I focus on creating secure, scalable, and
+            maintainable APIs. I apply best practices such as input validation,
+            JWT/Firebase authentication, and encrypted data handling. I also
+            leverage Firebase tools like Firestore and Realtime Database to
+            implement real-time features that are both robust and efficient.
+          </motion.p>
           <br />
+
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 1, duration: 1.4 }}
+          >
+            I’m committed to writing high-performance, maintainable code — from
+            optimizing React components and lazy-loading assets to fine-tuning
+            database queries and indexing strategies. My goal is always to
+            deliver fast, scalable apps without sacrificing user experience.
+          </motion.p>
           <br />
-          My core expertise lies in the MERN stack (MongoDB, Express.js,
-          React.js, Node.js) combined with Firebase, allowing me to deliver
-          end-to-end solutions that are both powerful and user-centric. I’m
-          particularly passionate about front-end development, where I design
-          intuitive, responsive interfaces that align with the latest UI/UX
-          trends and accessibility standards.
-          <br />
-          <br />
-          On the server side, I develop clean, secure, and scalable APIs,
-          integrating best practices such as input validation, JWT/Firebase
-          authentication, and encrypted data handling. I also leverage Firebase
-          tools like Firestore and Realtime Database to implement real-time
-          features with efficiency and flexibility.
-          <br />
-          <br />
-          I take pride in writing performant, maintainable code. From optimizing
-          React components and lazy-loading assets to indexing and querying
-          databases efficiently, I always aim to maximize speed and scalability
-          without compromising user experience.
-          <br />
-          <br />
-          I’m constantly exploring new technologies and refining my skills — and
-          always excited to collaborate on impactful, innovative projects.
-        </motion.p>
+
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 1.2, duration: 1.6 }}
+          >
+            I'm always learning, exploring new tools and technologies, and
+            looking for opportunities to contribute to meaningful,
+            forward-thinking projects. Let’s build something great together.
+          </motion.p>
+        </div>
       </div>
     </motion.div>
   );
