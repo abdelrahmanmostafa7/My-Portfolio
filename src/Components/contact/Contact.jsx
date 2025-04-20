@@ -18,6 +18,8 @@ const variants = {
   },
 };
 
+
+
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
@@ -54,7 +56,12 @@ const Contact = () => {
       initial="initial"
       whileInView="animate"
     >
-      <motion.div className="textContainer" variants={variants}>
+      <motion.div
+        className="textContainer"
+        initial={{ x: -100, opacity: 0 }}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
+        transition={{ delay: 0.2, duration: 0.8 }}
+      >
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>

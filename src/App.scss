@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 1rem; /* Adds a bit of padding for smoother scrolling */
   scroll-snap-type: y proximity; /* Enhances smoothness with snap behavior */
+  
 }
 * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ html {
 
 body {
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 a {

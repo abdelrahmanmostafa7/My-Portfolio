@@ -9,13 +9,18 @@ import Portfolio from "./Components/portfolio/Portfolio.jsx";
 
 function App() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
   }, []);
 
   return (
     <div className="appContainer">
       <Navbar />
-
       <Header />
 
       <div id="about">
