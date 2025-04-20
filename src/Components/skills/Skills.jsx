@@ -18,9 +18,10 @@ import firebase from "../../assets/firebase.png";
 import express from "../../assets/express.png";
 import tailwind from "../../assets/tailwind.png";
 import three from "../../assets/three.png";
-import { motion, useInView } from "motion/react";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
+//h1 animation 
 const listVariants = {
   initial: {
     y: -50,
@@ -35,28 +36,44 @@ const listVariants = {
     },
   },
 };
-
-const shakeAnimation = {
+// Bubble entry animation
+const bubbleVariant = (x, y) => ({
+  initial: {
+    x,
+    y,
+    opacity: 0,
+    scale: 0.1,
+  },
   animate: {
-    x: [0, 3, -3, 3, -3, 0],
-    y: [0, -3, 3, -3, 3, 0],
+    x: 0,
+    y: 0,
+    opacity: 1,
+    scale: 1,
     transition: {
-      duration: 4,
-      repeat: Infinity,
-      ease: "easeInOut",
+      duration: 2,
+      ease: "easeOut",
     },
+  },
+});
+
+// Floating animations
+const floatingAnimation1 = {
+  y: [0, -7, 0, 7, 0],
+  x: [0, -7, 0, 7, 0],
+  transition: {
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
   },
 };
 
-const shakeAnimation1 = {
-  animate: {
-    x: [0, -3, 3, -3, 3, 0],
-    y: [0, 4, -3, 4, -3, 0],
-    transition: {
-      duration: 4,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
+const floatingAnimation2 = {
+  y: [0, 7, 0, -7, 0],
+  x: [0, 7, 0, -7, 0],
+  transition: {
+    duration: 6,
+    repeat: Infinity,
+    ease: "easeInOut",
   },
 };
 
@@ -64,133 +81,65 @@ const Skills = () => {
   const ref = useRef();
   const isInView = useInView(ref);
 
+  const icons = [
+    { src: html, alt: "HTML" },
+    { src: css, alt: "CSS" },
+    { src: tailwind, alt: "Tailwind CSS" },
+    { src: sass, alt: "Sass" },
+    { src: javascript, alt: "JavaScript" },
+    { src: typescript, alt: "TypeScript" },
+    { src: react, alt: "React" },
+    { src: next, alt: "Next.js" },
+    { src: mu5, alt: "Material UI 5" },
+    { src: three, alt: "Three.js" },
+    { src: redux, alt: "Redux" },
+    { src: framer, alt: "Framer Motion" },
+    { src: figma, alt: "Figma" },
+    { src: git, alt: "Git" },
+    { src: node, alt: "Node.js" },
+    { src: express, alt: "Express.js" },
+    { src: mongo, alt: "MongoDB" },
+    { src: firebase, alt: "Firebase" },
+  ];
+
   return (
     <motion.div
       className="skillsContainer"
       ref={ref}
-      variants={listVariants}
+      initial="initial"
       animate={isInView ? "animate" : "initial"}
     >
-      <div className="slogan">
-        <h1>How I Can Contribute , My Skills</h1>
-      </div>
+      <motion.div
+        className="slogan"
+        variants={listVariants}
+        animate={isInView ? "animate" : "initial"}
+      >
+        <h1>How I Can Contribute, My Skills</h1>
+      </motion.div>
       <div className="skillsIcons">
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={html}
-          alt="HTML"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={css}
-          alt="CSS"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={tailwind}
-          alt="Tailwind CSS"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={sass}
-          alt="Sass"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={javascript}
-          alt="JavaScript"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={typescript}
-          alt="TypeScript"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={react}
-          alt="React"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={next}
-          alt="Next.js"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={mu5}
-          alt="Material UI 5"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={three}
-          alt="Three"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={redux}
-          alt="Redux"
-        />
+        {icons.map((icon, index) => {
+          const randomX = Math.floor(Math.random() * 400 - 200);
+          const randomY = Math.floor(Math.random() * 400 - 200);
+          const floatAnim =
+            Math.random() > 0.5 ? floatingAnimation1 : floatingAnimation2;
 
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={framer}
-          alt="Framer Motion"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={figma}
-          alt="Figma"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={git}
-          alt="Git"
-        />
-
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={node}
-          alt="Node.js"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={express}
-          alt="Express.js"
-        />
-        <motion.img
-          variants={shakeAnimation}
-          animate="animate"
-          src={mongo}
-          alt="MongoDB"
-        />
-        <motion.img
-          variants={shakeAnimation1}
-          animate="animate"
-          src={firebase}
-          alt="Firebase"
-        />
+          return (
+            <motion.img
+              key={index}
+              src={icon.src}
+              alt={icon.alt}
+              variants={bubbleVariant(randomX, randomY)}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              className="skillIcon"
+              whileHover={{ scale: 1.1 }}
+              whileInView={floatAnim}
+            />
+          );
+        })}
       </div>
     </motion.div>
   );
 };
 
 export default Skills;
-
-
- 
