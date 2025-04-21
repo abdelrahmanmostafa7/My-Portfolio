@@ -18,8 +18,8 @@ const VantaBackground = () => {
       midtoneColor: 0xd6d6d6,
       lowlightColor: 0xe0e0e0,
       baseColor: 0xf7f7f7,
-      blurFactor: 0.86,
-      speed: 2.0,
+      blurFactor: 0.65,
+      speed: 3,
     });
 
     return () => {
