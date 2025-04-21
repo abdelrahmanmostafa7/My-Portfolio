@@ -6,6 +6,7 @@ import Navbar from "./Components/navbar/Navbar.jsx";
 import Skills from "./Components/skills/Skills.jsx";
 import Contact from "./Components/contact/Contact.jsx";
 import Portfolio from "./Components/portfolio/Portfolio.jsx";
+import VantaBackground from "./VantaBackground.jsx";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="appContainer">
+        <VantaBackground />
       <Navbar />
       <Header />
 
