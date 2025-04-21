@@ -59,7 +59,7 @@ const About = () => {
           <motion.p
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 0.6, duration: 1 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
           >
             My main expertise lies in the MERN stack — MongoDB, Express.js,
             React.js, and Node.js — complemented by Firebase. This tech combo
@@ -73,7 +73,7 @@ const About = () => {
           <motion.p
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 0.8, duration: 1.2 }}
+            transition={{ delay: 0.8, duration: 0.8 }}
           >
             On the back end, I focus on creating secure, scalable, and
             maintainable APIs. I apply best practices such as input validation,
@@ -86,7 +86,7 @@ const About = () => {
           <motion.p
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 1, duration: 1.4 }}
+            transition={{ delay: 1, duration: 0.8 }}
           >
             I’m committed to writing high-performance, maintainable code — from
             optimizing React components and lazy-loading assets to fine-tuning
@@ -98,7 +98,7 @@ const About = () => {
           <motion.p
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 1.2, duration: 1.6 }}
+            transition={{ delay: 1.1, duration: 0.8 }}
           >
             I'm always learning, exploring new tools and technologies, and
             looking for opportunities to contribute to meaningful,

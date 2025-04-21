@@ -1,8 +1,17 @@
 // @import "../../app.scss";
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .slogan {
     width: 100%;
     text-align: center;
-    margin-bottom:30px ;
+    margin-bottom: 20px;
 
     h1 {
         font-size: 4rem;
@@ -21,11 +30,9 @@
 .contact {
     
     max-width: 1200px;
-    margin: auto;
     display: flex;
     align-items: center;
     gap: 50px;
-
 
 
     .textContainer {

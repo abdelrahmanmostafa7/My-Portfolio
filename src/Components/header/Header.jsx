@@ -15,9 +15,6 @@ const Header = () => {
     <motion.div
       className="headerContainer"
       ref={ref}
-      initial={{ opacity: 0, y: 100 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 1, ease: "easeOut" }}
     >
       <motion.div
         className="left"

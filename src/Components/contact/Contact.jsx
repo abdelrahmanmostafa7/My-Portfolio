@@ -18,7 +18,6 @@ const listVariants = {
   },
 };
 
-
 const variants = {
   initial: {
     y: 100,
@@ -63,11 +62,12 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <motion.div
       className="contentContainer"
       ref={ref}
       variants={listVariants}
       animate={isInView ? "animate" : "initial"}
+
     >
       <div className="slogan">
         <h1>Contact Me</h1>
@@ -145,7 +145,7 @@ const Contact = () => {
           </motion.form>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
