@@ -34,14 +34,16 @@ const About = () => {
       </div>
 
       <div className="aboutItems">
-        <motion.img
-          src={about}
-          alt="About"
-          className="aboutImg"
-          initial={{ x: -100, opacity: 0 }}
-          animate={isInView ? { x: 0, opacity: 1 } : {}}
-          transition={{ delay: 0.2, duration: 0.8 }}
-        />
+        <div className="aboutImg">
+          <motion.img
+            src={about}
+            alt="About"
+            className="aboutImg"
+            initial={{ x: -100, opacity: 0 }}
+            animate={isInView ? { x: 0, opacity: 1 } : {}}
+            transition={{ delay: 0.2, duration: 0.8 }}
+          />
+        </div>
         <div className="aboutDesc">
           <motion.p
             initial={{ x: 100, opacity: 0 }}
@@ -61,48 +63,31 @@ const About = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            My main expertise lies in the MERN stack — MongoDB, Express.js,
-            React.js, and Node.js — complemented by Firebase. This tech combo
-            allows me to build full-stack applications that are efficient,
-            responsive, and user-focused. I have a particular passion for
-            front-end development, where I craft clean, accessible, and
-            intuitive interfaces that follow modern UI/UX best practices.
+            I'm a MERN stack web developer specializing in MongoDB, Express.js,
+            React.js, and Node.js — complemented by Firebase. This powerful tech
+            stack enables me to build full-stack applications that are
+            efficient, responsive, and user-focused.
+            <br /> I have a strong passion for front-end development, where I
+            create clean, accessible, and intuitive interfaces that align with
+            modern UI/UX best practices. I'm also dedicated to writing
+            high-performance, maintainable code, optimizing components,
+            lazy-loading assets, and ensuring smooth user experiences.
+            <br /> On the back end, I focus on building secure, scalable, and
+            maintainable APIs. I follow best practices such as input validation,
+            JWT/Firebase authentication, and encrypted data handling to ensure
+            robustness and reliability across the application.
           </motion.p>
           <br />
-
           <motion.p
             initial={{ x: 100, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            On the back end, I focus on creating secure, scalable, and
-            maintainable APIs. I apply best practices such as input validation,
-            JWT/Firebase authentication, and encrypted data handling. I also
-            leverage Firebase tools like Firestore and Realtime Database to
-            implement real-time features that are both robust and efficient.
-          </motion.p>
-          <br />
-
-          <motion.p
-            initial={{ x: 100, opacity: 0 }}
-            animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 1, duration: 0.8 }}
-          >
-            I’m committed to writing high-performance, maintainable code — from
-            optimizing React components and lazy-loading assets to fine-tuning
-            database queries and indexing strategies. My goal is always to
-            deliver fast, scalable apps without sacrificing user experience.
-          </motion.p>
-          <br />
-
-          <motion.p
-            initial={{ x: 100, opacity: 0 }}
-            animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 1.1, duration: 0.8 }}
-          >
             I'm always learning, exploring new tools and technologies, and
-            looking for opportunities to contribute to meaningful,
-            forward-thinking projects. Let’s build something great together.
+            seeking opportunities to contribute to meaningful, forward-thinking
+            projects. My goal is to deliver fast, scalable apps without
+            compromising on user experience. Let’s build something great
+            together.
           </motion.p>
         </div>
       </div>

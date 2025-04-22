@@ -41,25 +41,20 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+ const sendEmail = (e) => {
+   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
-        formRef.current,
-        "pX_2hasGmGcuvjXIW"
-      )
-      .then(
-        (result) => {
-          setSuccess(true);
-        },
-        (error) => {
-          setError(true);
-        }
-      );
-  };
+   const formData = new FormData(e.target);
+
+   emailjs
+     .sendForm("service_tzkxfck", "template_kgnz69i", e.target, {
+       publicKey: "Lt8nni8C38BnCk0Fd",
+     })
+     .then(
+       () => setSuccess(true),
+       () => setError(true)
+     );
+ };
 
   return (
     <motion.div
@@ -140,8 +135,8 @@ const Contact = () => {
             <input type="email" required placeholder="Email" name="email" />
             <textarea rows={8} placeholder="Message" name="message" />
             <button>Submit</button>
-            {error && "Error"}
-            {success && "Success"}
+            {error && "Error✖"}
+            {success && "Success✔"}
           </motion.form>
         </div>
       </motion.div>

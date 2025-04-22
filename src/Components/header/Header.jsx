@@ -7,15 +7,12 @@ import linkedIn from "../../assets/linkedIn.png";
 import gitHub from "../../assets/gitHup.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import cv from "../../assets/cv.pdf"
 const Header = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
 
   return (
-    <motion.div
-      className="headerContainer"
-      ref={ref}
-    >
+    <motion.div className="headerContainer" ref={ref}>
       <motion.div
         className="left"
         initial={{ x: -100, opacity: 0 }}
@@ -30,9 +27,26 @@ const Header = () => {
         </div>
 
         <div className="headerLinks">
-          <img src={gitHub} alt="GitHub" className="linkImg" />
-          <img src={linkedIn} alt="LinkedIn" className="linkImg" />
-          <button className="cvBtn">Download CV</button>
+          <a
+            href="https://github.com/abdelrahmanmostafa7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkWrapper"
+          >
+            <img src={gitHub} alt="GitHub" className="linkImg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abdelrahman-mostafa7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkWrapper"
+          >
+            <img src={linkedIn} alt="LinkedIn" className="linkImg" />
+          </a>
+
+          <a href={cv} download="Abdelrahman Mostafa Zaki(FullStack).pdf">
+            <button className="cvBtn">Download CV</button>
+          </a>
         </div>
       </motion.div>
 
