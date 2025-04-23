@@ -50,6 +50,13 @@
             align-items: center;
             gap: 10px;
 
+            .accounts{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+            }
+
             .linkWrapper {
                     display: inline-block;
                     width: 50px;

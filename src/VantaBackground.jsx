@@ -14,11 +14,11 @@ const VantaBackground = () => {
       gyroControls: false,
       minHeight: 200.0,
       minWidth: 200.0,
-      highlightColor: 0xd4d4d4,
-      midtoneColor: 0xd6d6d6,
-      lowlightColor: 0xe0e0e0,
+      highlightColor: 0xdedede,
+      midtoneColor: 0xd9d9d9,
+      lowlightColor: 0xdedede,
       baseColor: 0xf7f7f7,
-      blurFactor: 0.65,
+      blurFactor: 0.7,
       speed: 3,
     });
 
@@ -33,7 +33,6 @@ const VantaBackground = () => {
       style={{
         width: "100%",
         height: "100vh",
-        position: "absolute",
         top: 0,
         left: 0,
         zIndex: -1,

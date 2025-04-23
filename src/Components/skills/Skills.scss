@@ -11,7 +11,7 @@
     .slogan {
         width: 100%;
         text-align: center;
-        margin-bottom:20px ;
+        margin-bottom:50px ;
 
         h1 {
             font-size: 3rem;
@@ -32,14 +32,14 @@
     .skillsIcons {
         display: grid;
         grid-template-columns: repeat(6, 1fr); // 6 images in a row
-        gap: 5rem;
+        gap: 6rem;
         justify-content: center;
         align-items: center;
-        max-width: 1200px;
+        max-width: 1300px;
 
         img {
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%; 
             transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
             object-fit: cover;

@@ -4,8 +4,8 @@ import About from "./Components/about/About.jsx";
 import Header from "./Components/header/Header.jsx";
 import Navbar from "./Components/navbar/Navbar.jsx";
 import Skills from "./Components/skills/Skills.jsx";
+import Projects from "./Components/projects/Projects.jsx";
 import Contact from "./Components/contact/Contact.jsx";
-import Portfolio from "./Components/portfolio/Portfolio.jsx";
 import VantaBackground from "./VantaBackground.jsx";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="appContainer">
-        <VantaBackground />
+      <VantaBackground />
       <Navbar />
       <Header />
 
@@ -32,7 +32,7 @@ function App() {
         <Skills />
       </div>
       <div id="experience">
-        <Portfolio />
+        <Projects />
       </div>
       <div id="contact">
         <Contact />
