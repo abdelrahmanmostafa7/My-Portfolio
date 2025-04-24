@@ -31,12 +31,12 @@ const VantaBackground = () => {
     <div
       ref={vantaRef}
       style={{
-        width: "100%",
-        height: "100vh",
+        position: "fixed", // Ensure it's fixed to the screen
         top: 0,
         left: 0,
-        zIndex: -1,
-        position: "fixed", // ✅ covers the full page, even when scrolling
+        width: "100%",
+        height: "100%", // Make sure it's 100% of the viewport height
+        zIndex: -1, // Behind other content
       }}
     />
   );

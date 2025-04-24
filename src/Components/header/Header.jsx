@@ -21,7 +21,7 @@ const Header = () => {
       >
         <div className="headerInfo">
           <h5>Hello, I'm</h5>
-          <h1 className="h1">Abdelrahman Zaki</h1>
+          <h1>Abdelrahman Zaki</h1>
           <h2>FullStack Developer</h2>
           <p>Experienced proficient in MERN Stack</p>
         </div>
