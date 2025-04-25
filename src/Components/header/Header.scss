@@ -8,6 +8,11 @@
     padding: 0px;
     max-width: 1366px;
 
+    @media (max-width:768px) {
+        flex-direction: column;
+        height: auto;
+    }
+
     .left {
         flex: 1;
         display: flex;
@@ -23,7 +28,6 @@
             justify-content: center;
             gap: 5px;
 
-
             h5 {
                 font-size: 30px;
                 text-align: left;
@@ -38,7 +42,7 @@
             }
 
             p {
-                font-size: 30px;
+                font-size: 20px !important;
                 color: rgb(118, 118, 118);
             }
         }
@@ -50,7 +54,7 @@
             align-items: center;
             gap: 10px;
 
-            .accounts{
+            .accounts {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -58,24 +62,24 @@
             }
 
             .linkWrapper {
-                    display: inline-block;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50%;
-                    overflow: hidden;
-                }
-            
-                .linkImg {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    cursor: pointer;
-                    transition: transform 0.3s ease;
-                }
-            
-                .linkImg:hover {
-                    transform: scale(1.1);
-                }
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .linkImg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+
+            .linkImg:hover {
+                transform: scale(1.1);
+            }
 
             .cvBtn {
                 padding: 10px 20px;
@@ -93,8 +97,6 @@
                     transition: background-color 0.3s ease, color 0.3s ease;
                     border: 2px solid #000;
                 }
-
-
             }
         }
     }
@@ -126,6 +128,70 @@
             height: 80vh;
             z-index: 1;
             position: relative;
+
+            @media (max-width:768px) {
+                width: auto;
+                height: 60vh;
+            }
+        }
+    }
+
+
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        
+        .left,
+        .right {
+            flex: none;
+            width: 100%;
+        }
+
+        .right {
+            order: -1;
+            margin-bottom: 20px;
+        }
+
+        .bg {
+            width: 400px !important;
+        }
+
+
+        .left {
+            order: 1;
+        }
+
+        /* Reduced font sizes for mobile */
+        .headerInfo h1 {
+            font-size: 40px !important;
+            /* Ensures it gets applied */
+        }
+
+        .headerInfo h2 {
+            font-size: 30px !important;
+        }
+
+        .headerInfo h5 {
+            font-size: 30px !important;
+        }
+
+        .headerInfo p {
+            font-size: 10px !important;
+        }
+
+        .headerLinks {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .linkWrapper {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        .cvBtn {
+            font-size: 14px !important;
+            padding: 5px 8px !important;
         }
     }
 }

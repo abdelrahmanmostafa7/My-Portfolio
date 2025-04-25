@@ -1,6 +1,7 @@
 .aboutContainer {
     display: flex;
-    flex-direction: column; // important to stack h1 on top
+    flex-direction: column;
+    /* Stacks content vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -8,9 +9,18 @@
     height: 100vh;
     margin: auto;
 
+
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
+
     .slogan {
         width: 100%;
         text-align: center;
+
+        @media (max-width: 768px) {
+            margin-bottom: 0px;
+        }
 
         h1 {
             font-size: 3rem;
@@ -24,6 +34,10 @@
             &:hover {
                 background-position: right center;
             }
+
+            @media (max-width: 768px) {
+                font-size: 25px;
+            }
         }
     }
 
@@ -34,27 +48,49 @@
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+
+
         .aboutDesc {
             display: flex;
             flex-direction: column;
             flex: 1;
+            padding: 20px;
+
+            @media (max-width: 768px) {
+                padding-top: 0px;
+            }
+
+
             p {
                 font-size: 17px;
                 font-weight: 400;
                 line-height: 1.4;
+
+                @media (max-width: 768px) {
+                    font-size: 11px;
+                }
             }
         }
 
-.aboutImg{
-    display: flex;
-    flex: 1;
-.aboutImg {
-        flex: 1;
-        width: 100%;
-        height: 100%;
-    }
-}
+        .aboutImg {
+            display: flex;
+            flex: 1;
+            padding: 20px;
 
-        
+            @media (max-width:768px) {
+                    padding: 0px;
+                }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
     }
 }

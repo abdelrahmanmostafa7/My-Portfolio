@@ -39,6 +39,7 @@
         font-weight: 400;
         font-size: 25px;
         cursor: pointer;
+        transition: transform 0.3s ease-in;
 
         a {
             transition: transform 0.3s ease-in;
@@ -49,5 +50,52 @@
             }
         }
 
+        &.active {
+            display: flex !important; // override display: none
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 5px;
+            height: auto;
+            position: absolute;
+            top: 80px; // adjust based on nav height
+            left: 0;
+            right: 0;
+            z-index: 998;
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 35px;
+
+        .line {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            border-radius: 5px;
+        }
+    }
+
+    // Media query for mobile view
+    @media screen and (max-width: 768px) {
+
+        .navContainer {
+            display: flex;
+            justify-content: baseline;
+        }
+
+        .items {
+            display: none;
+        }
+
+        .burger {
+            display: flex;
+        }
     }
 }

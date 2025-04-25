@@ -50,12 +50,12 @@ const About = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            I'm Abdelrahman Mostafa Zaki — a passionate Full-Stack Developer
-            with a solid academic background in Computer Science. I earned my
-            degree from El Shorouk Academy, where I built a strong foundation in
-            data structures, algorithms, database design, operating systems, and
-            network security. These core principles continue to influence how I
-            architect and scale modern web applications.
+            I’m Abdelrahman Mostafa Zaki, a passionate Full-Stack Developer with
+            a strong academic foundation in Computer Science from El Shorouk
+            Academy. My technical expertise includes core computing concepts
+            such as data structures, algorithms, database design, operating
+            systems, and network security—principles that continue to guide how
+            I build scalable, modern web applications.
           </motion.p>
           <br />
           <motion.p
@@ -63,19 +63,16 @@ const About = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            I'm a MERN stack web developer specializing in MongoDB, Express.js,
-            React.js, and Node.js — complemented by Firebase. This powerful tech
-            stack enables me to build full-stack applications that are
-            efficient, responsive, and user-focused.
-            <br /> I have a strong passion for front-end development, where I
-            create clean, accessible, and intuitive interfaces that align with
-            modern UI/UX best practices. I'm also dedicated to writing
-            high-performance, maintainable code, optimizing components,
-            lazy-loading assets, and ensuring smooth user experiences.
-            <br /> On the back end, I focus on building secure, scalable, and
-            maintainable APIs. I follow best practices such as input validation,
-            JWT/Firebase authentication, and encrypted data handling to ensure
-            robustness and reliability across the application.
+            I specialize in the MERN stack (MongoDB, Express.js, React.js, and
+            Node.js) along with Firebase, enabling me to deliver full-stack
+            solutions that are efficient, responsive, and user-focused. While I
+            work across the full stack,
+            <br /> I have a strong passion for front-end development—crafting
+            clean, accessible, and intuitive interfaces based on modern UI/UX
+            best practices.
+            <br /> On the back end, I build secure and maintainable APIs,
+            applying best practices like input validation, JWT/Firebase
+            authentication, and encrypted data handling. I
           </motion.p>
           <br />
           <motion.p
@@ -83,11 +80,10 @@ const About = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
-            I'm always learning, exploring new tools and technologies, and
-            seeking opportunities to contribute to meaningful, forward-thinking
-            projects. My goal is to deliver fast, scalable apps without
-            compromising on user experience. Let’s build something great
-            together.
+            I’m continually exploring new technologies and seeking opportunities
+            to contribute to impactful, forward-thinking projects. My focus is
+            on delivering fast, scalable applications without compromising user
+            experience.
           </motion.p>
         </div>
       </div>

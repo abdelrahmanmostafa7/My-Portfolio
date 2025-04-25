@@ -19,7 +19,8 @@ html {
   scroll-snap-type: y proximity;
   /* Enhances smoothness with snap behavior */
   padding: 0;
-    margin: 0;
+  margin: 0;
+  overflow-x: hidden;
 
 }
 
@@ -27,13 +28,14 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   // overflow-x: hidden;
+  
 }
 
 body {
   background-color: var(--primary-color);
   overflow-x: hidden;
   padding: 0;
-    margin: 0;
+  margin: 0;
 }
 
 a {
@@ -54,6 +56,13 @@ a {
   gap: 10px;
   position: relative;
 
+  @media (min-width:768px) {
+    padding: 0px;
+    margin: 0px;
+    gap: 0px;
+
+  }
+
   .vantaBackground {
     position: absolute;
     top: 0;
@@ -63,44 +72,3 @@ a {
     z-index: -1;
   }
 }
-
-  section {
-    height: 100vh;
-    scroll-snap-align: center;
-  }
-
-
-
-  @media (min-width:640px) {
-    .container {
-      max-width: 640px;
-    }
-
-  }
-
-  @media (min-width:768px) {
-    .container {
-      max-width: 768px;
-    }
-
-  }
-
-  @media (min-width:1024px) {
-    .container {
-      max-width: 1024px;
-    }
-
-  }
-
-  @media (min-width:1280px) {
-    .container {
-      max-width: 1280px;
-    }
-
-  }
-
-  @media (min-width:1536px) {
-    .container {
-      max-width: 1536px;
-    }
-  }

@@ -101,7 +101,7 @@ const Contact = () => {
             whileInView={{ opacity: 0 }}
             transition={{ delay: 2, duration: 1 }}
           >
-            <svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
+            <svg className="svgImg" viewBox="0 0 32.666 32.666">
               <motion.path
                 strokeWidth={0.2}
                 fill="none"
@@ -133,7 +133,7 @@ const Contact = () => {
           >
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />
-            <textarea rows={8} placeholder="Message" name="message" />
+            <textarea rows={5} placeholder="Message" name="message" />
             <button>Submit</button>
             {error && "Error✖"}
             {success && "Success✔"}
