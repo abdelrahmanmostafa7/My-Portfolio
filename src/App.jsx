@@ -6,7 +6,7 @@ import Navbar from "./Components/navbar/Navbar.jsx";
 import Skills from "./Components/skills/Skills.jsx";
 import Projects from "./Components/projects/Projects.jsx";
 import Contact from "./Components/contact/Contact.jsx";
-// import VantaBackground from "./VantaBackground.jsx";
+import VantaBackground from "./VantaBackground.jsx";
 
 function App() {
   useEffect(() => {
@@ -20,22 +20,27 @@ function App() {
   }, []);
 
   return (
-    <div className="appContainer">
-      {/* <VantaBackground /> */}
-      <Navbar />
-      <Header />
+    <div className="appWrapper">
+      <div className="appContainer">
+        <VantaBackground />
+        <Navbar />
+        <Header />
 
-      <div id="about">
-        <About />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="experience">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
+        <section id="about" className="section">
+          <About />
+        </section>
+
+        <section id="skills" className="section">
+          <Skills />
+        </section>
+
+        <section id="experience" className="section">
+          <Projects />
+        </section>
+
+        <section id="contact" className="section">
+          <Contact />
+        </section>
       </div>
     </div>
   );

@@ -8,6 +8,10 @@
     height: 100vh;
     margin: auto;
 
+    @media (max-width:768px) {
+        margin: 0px;
+    }
+
     .slogan {
         width: 100%;
         text-align: center;
@@ -42,8 +46,8 @@
         max-width: 1300px;
 
         @media (max-width: 768px) {
-            grid-template-columns: repeat(4, 1fr); // 6 images in a row
-            gap: 2.5rem;
+            grid-template-columns: repeat(3, 1fr); // 6 images in a row
+            gap: 3rem;
         }
 
 
@@ -65,8 +69,8 @@
                 }
 
                 @media (max-width: 768px) {
-                    width: 50px;
-                    height: 50px;
+                    width: 70px;
+                    height: 70px;
                     padding: 5px;
 
                 }

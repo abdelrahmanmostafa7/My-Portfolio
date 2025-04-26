@@ -69,8 +69,11 @@
         flex-wrap: wrap;
 
         @media (max-width: 768px) {
+                margin-top: 0px;
+            }
+
+        @media (max-width: 768px) {
             flex-direction: column;
-            // margin-top: 80px;
             gap: 2rem;
         }
 
