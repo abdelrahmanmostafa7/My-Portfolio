@@ -1,8 +1,7 @@
 import { useRef, useState } from "react";
-import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import "./Contact.scss";
 const listVariants = {
   initial: {
     y: -50,
@@ -41,20 +40,20 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
- const sendEmail = (e) => {
-   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-   const formData = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-  emailjs.sendForm(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    e.target,
-    {
-      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-    }
-  );
- };
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      }
+    );
+  };
 
   return (
     <motion.div
@@ -62,7 +61,6 @@ const Contact = () => {
       ref={ref}
       variants={listVariants}
       animate={isInView ? "animate" : "initial"}
-
     >
       <div className="slogan">
         <h1>Contact Me</h1>
