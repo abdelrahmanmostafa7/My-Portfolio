@@ -46,14 +46,14 @@ const Contact = () => {
 
    const formData = new FormData(e.target);
 
-   emailjs
-     .sendForm("service_tzkxfck", "template_kgnz69i", e.target, {
-       publicKey: "Lt8nni8C38BnCk0Fd",
-     })
-     .then(
-       () => setSuccess(true),
-       () => setError(true)
-     );
+  emailjs.sendForm(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    e.target,
+    {
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    }
+  );
  };
 
   return (
