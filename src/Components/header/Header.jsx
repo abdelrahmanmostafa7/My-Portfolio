@@ -1,13 +1,13 @@
 import "./Header.scss";
-import Avatar from "../../assets/avatar.png";
 import Shape from "./Shape";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import linkedIn from "../../assets/linkedIn.png";
-import gitHub from "../../assets/gitHup.png";
+import Avatar from "../../../public/assets/avatar.png";
+import linkedIn from "../../../public/assets/linkedIn.png";
+import gitHub from "../../../public/assets/gitHup.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import cv from "../../assets/cv.pdf"
+import cv from "../../../public/assets/cv.pdf"
 const Header = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
 

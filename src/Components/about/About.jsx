@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./About.scss";
 import { motion, useInView } from "framer-motion";
-import about from "../../assets/about.png";
+import about from "../../../public/assets/about.png";
 
 const listVariants = {
   initial: {

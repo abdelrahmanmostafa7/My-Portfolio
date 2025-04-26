@@ -2,7 +2,47 @@ import React from "react";
 import "./Skills.scss";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import SkillsData from "../../data/SkillsData";
+import react from "/assets/react.png";
+import css from "/assets/css.png";
+import git from "/assets/git.png";
+import figma from "/assets/figma.png";
+import html from "/assets/html.png";
+import javascript from "/assets/javascript.png";
+import mu5 from "/assets/mu5.png";
+import node from "/assets/node.png";
+import redux from "/assets/redux.png";
+import sass from "/assets/sass.png";
+import typescript from "/assets/typescript.png";
+import framer from "/assets/framer.png";
+import next from "/assets/next.png";
+import mongo from "/assets/mongo.png";
+import firebase from "/assets/firebase.png";
+import express from "/assets/express.png";
+import tailwind from "/assets/tailwind.png";
+import three from "/assets/three.png";
+
+
+ const icons = [
+   { src: html, alt: "HTML" },
+   { src: css, alt: "CSS" },
+   { src: tailwind, alt: "Tailwind CSS" },
+   { src: sass, alt: "Sass" },
+   { src: javascript, alt: "JavaScript" },
+   { src: typescript, alt: "TypeScript" },
+   { src: react, alt: "React" },
+   { src: next, alt: "Next.js" },
+   { src: mu5, alt: "Material UI 5" },
+   { src: three, alt: "Three.js" },
+   { src: redux, alt: "Redux" },
+   { src: framer, alt: "Framer Motion" },
+   { src: figma, alt: "Figma" },
+   { src: git, alt: "Git" },
+   { src: node, alt: "Node.js" },
+   { src: express, alt: "Express.js" },
+   { src: mongo, alt: "MongoDB" },
+   { src: firebase, alt: "Firebase" },
+ ];
+
 
 //h1 animation 
 const listVariants = {
@@ -79,7 +119,7 @@ const Skills = () => {
         <h1>How I Can Contribute, My Skills</h1>
       </motion.div>
       <div className="skillsIcons">
-        {SkillsData.map((icon, index) => {
+        {icons.map((icon, index) => {
           const randomX = Math.floor(Math.random() * 400 - 200);
           const randomY = Math.floor(Math.random() * 400 - 200);
           const floatAnim =
