@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdelrahmanmostafazaki.vercel.app/sitemap.xml
