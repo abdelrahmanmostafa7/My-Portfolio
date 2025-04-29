@@ -3,7 +3,7 @@ import "./Projects.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import ProjectsData from "../../data/ProjectsData.js"
+import ProjectsData from "../../data/ProjectsData.js";
 
 const SingleProject = ({ item }) => {
   const { ref, inView } = useInView({ threshold: 0.2 });
@@ -36,7 +36,14 @@ const SingleProject = ({ item }) => {
             <p>{item.desc}</p>
             <div className="projectBtns">
               <button>Live Demo</button>
-              <button>GitHup</button>
+              <a
+                href={item.githup}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkWrapper"
+              >
+                <button>Git Hup</button>
+              </a>
             </div>
           </motion.div>
         </div>
