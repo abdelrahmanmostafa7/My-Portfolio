@@ -35,7 +35,14 @@ const SingleProject = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <div className="projectBtns">
-              <button>Live Demo</button>
+              <a
+                href={item.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkWrapper"
+              >
+                <button>Live Demo</button>
+              </a>
               <a
                 href={item.githup}
                 target="_blank"

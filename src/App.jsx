@@ -20,10 +20,10 @@ function App() {
   }, []);
 
   return (
-    <div className="appWrapper">
-      <div className="appContainer">
-        <VantaBackground />
+    <div className="appContainer">
         <Navbar />
+      <div className="appWrapper">
+        <VantaBackground />
         <Header />
 
         <section id="about" className="section">

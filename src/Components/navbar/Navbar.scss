@@ -21,7 +21,7 @@
         display: inline-block;
 
         .logoImg {
-            width: 80px;
+            width: 90px;
             height: auto;
             transition: transform 0.5s ease;
         }
@@ -37,7 +37,7 @@
         display: flex;
         gap: 20px;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 30px;
         cursor: pointer;
         transition: transform 0.3s ease-in;
 
@@ -72,11 +72,11 @@
         cursor: pointer;
         flex-direction: column;
         gap: 5px;
-        font-size: 35px;
+        font-size: 50px;
 
         .line {
             width: 30px;
-            height: 3px;
+            height: 5px;
             background-color: black;
             border-radius: 5px;
         }
