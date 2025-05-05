@@ -16,6 +16,14 @@ const ProjectsData = [
     liveDemo: "https://clothes-store-sandy-nine.vercel.app/",
   },
   {
+    id: 4,
+    title: "Tour Scope",
+    img: "/assets/tourScope.png",
+    desc: "A full-stack MERN application designed for personalized travel planning. Features include AI-powered hotel and city recommendations, an interactive Mapbox map for exploration, responsive carousels for showcasing hotels, and a user-friendly interface. Integrated with secure authentication, dynamic data fetching, and a scalable backend API to deliver a seamless travel experience.",
+    githup: "https://github.com/abdelrahmanmostafa7/TourScope",
+    liveDemo: "",
+  },
+  {
     id: 3,
     title: "Nike Store",
     img: "/assets/nikeStore.png",
@@ -24,22 +32,14 @@ const ProjectsData = [
     liveDemo: "https://nike-store-lemon.vercel.app/",
   },
   {
-    id: 4,
-    title: "Tour Scope",
-    img: "/assets/tourScope.png",
-    desc: "A full-stack MERN application designed for personalized travel planning. Features include AI-powered hotel and city recommendations, an interactive Mapbox map for exploration, responsive carousels for showcasing hotels, and a user-friendly interface. Integrated with secure authentication, dynamic data fetching, and a scalable backend API to deliver a seamless travel experience.",
-    githup: "https://github.com/abdelrahmanmostafa7/TourScope",
+    id: 5,
+    title: "Blog App",
+    img: "/assets/blog.png",
+    desc: "Developed a full-stack blog application using Next.js, Prisma, MongoDB, and NextAuth. Implemented features such as dynamic theming, user authentication (Google/GitHub), rich text editing, category management, and responsive design. Optimized for SEO with server-side rendering and ensured scalability with Prisma ORM and MongoDB integration.",
+    githup:
+      "https://github.com/abdelrahmanmostafa7/Full-Stack-Blog-App-By-NextJs",
     liveDemo: "",
   },
-  // {
-  //   id: 5,
-  //   title: "Blog App",
-  //   img: "/assets/blog.png",
-  //   desc: "Developed a full-stack blog application using Next.js, Prisma, MongoDB, and NextAuth. Implemented features such as dynamic theming, user authentication (Google/GitHub), rich text editing, category management, and responsive design. Optimized for SEO with server-side rendering and ensured scalability with Prisma ORM and MongoDB integration.",
-  //   githup:
-  //     "https://github.com/abdelrahmanmostafa7/Full-Stack-Blog-App-By-NextJs",
-  //   liveDemo: "",
-  // },
 
   {
     id: 6,
