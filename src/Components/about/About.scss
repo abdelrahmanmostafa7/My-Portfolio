@@ -80,17 +80,29 @@
         .aboutImg {
             display: flex;
             flex: 1;
-            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
 
-            @media (max-width:768px) {
-                    padding: 0px;
-                }
+
+            @media (max-width: 768px) {
+                padding: 0;
+                height: 10vh;
+
+            }
+
+            .lottieImg {
+                width: 90% ;
+
+                @media (max-width: 768px) {
+                        width: 60%;
+                        // width: 200px;
+                    }
+            }
         }
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
+
+
+
     }
 }

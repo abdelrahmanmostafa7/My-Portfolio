@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import "./About.scss";
 import { motion, useInView } from "framer-motion";
-import about from "/assets/about.png";
-
+// import about from "/assets/about.png";
+import Lottie from "lottie-react";
+import aboutSVG from "../../../public/aboutS.json"
+// import aboutSVG from "../../../public/aboutSVG.json";
 const listVariants = {
   initial: {
     y: -50,
@@ -34,16 +36,17 @@ const About = () => {
       </div>
 
       <div className="aboutItems">
-        <div className="aboutImg">
-          <motion.img
-            src={about}
-            alt="About"
-            className="aboutImg"
-            initial={{ x: -100, opacity: 0 }}
-            animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ delay: 0.2, duration: 0.8 }}
+        <motion.div
+          className="aboutImg"
+          initial={{ x: -100, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : {}}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          <Lottie
+            animationData={aboutSVG}
+            className="lottieImg"
           />
-        </div>
+        </motion.div>
         <div className="aboutDesc">
           <motion.p
             initial={{ x: 100, opacity: 0 }}
