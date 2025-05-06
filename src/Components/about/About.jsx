@@ -3,7 +3,7 @@ import "./About.scss";
 import { motion, useInView } from "framer-motion";
 // import about from "/assets/about.png";
 import Lottie from "lottie-react";
-import aboutSVG from "../../../public/aboutS.json"
+import aboutSVG from "../../../public/aboutS.json";
 // import aboutSVG from "../../../public/aboutSVG.json";
 const listVariants = {
   initial: {
@@ -42,10 +42,12 @@ const About = () => {
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <Lottie
-            animationData={aboutSVG}
-            className="lottieImg"
-          />
+          <a href="#skills" className="skillsLink">
+            <Lottie animationData={aboutSVG} className="lottieImg" />
+            <button className="hoverMessage">
+              Let's Take A Look On My Skills
+            </button>
+          </a>
         </motion.div>
         <div className="aboutDesc">
           <motion.p

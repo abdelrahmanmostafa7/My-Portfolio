@@ -7,7 +7,7 @@ import linkedIn from "/assets/linkedIn.png";
 import gitHub from "/assets/gitHup.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import cv from "/assets/cv.pdf"
+import cv from "/assets/cv.pdf";
 const Header = () => {
   const { ref, inView } = useInView({ threshold: 0.2 });
 
@@ -48,6 +48,10 @@ const Header = () => {
             <button className="cvBtn">Download CV</button>
           </a>
         </div>
+
+        <a href="#about" >
+          <button className="hoverMessage">Click To Know More About Me</button>
+        </a>
       </motion.div>
 
       <motion.div
