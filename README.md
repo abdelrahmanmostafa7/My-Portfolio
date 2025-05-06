@@ -15,6 +15,7 @@ It’s fully responsive, accessible, and optimized for a seamless user experienc
 ### 👤 About Section
 - **Gradient Text**: Beautiful gradient text with hover animation.
 - **Responsive Layout**: Adapts to various screen sizes.
+- **Animated Image** Created by lottie lib 
 
 ### 🛠️ Skills Section
 - **Floating Icons**: Animated icons with floating effect.
