@@ -45,7 +45,7 @@ const About = () => {
           <a href="#skills" className="skillsLink">
             <Lottie animationData={aboutSVG} className="lottieImg" />
             <button className="hoverMessage">
-              Let's Take A Look On My Skills
+              Click To Take A Look On My Skills
             </button>
           </a>
         </motion.div>
