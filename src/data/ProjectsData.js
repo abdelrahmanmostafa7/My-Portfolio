@@ -8,6 +8,22 @@ const ProjectsData = [
     liveDemo: "https://nike-store-lemon.vercel.app/",
   },
   {
+    id: 4,
+    title: "Tour Scope",
+    img: "/assets/tourScope.png",
+    desc: "A full-stack MERN application designed for personalized travel planning. Features include AI-powered hotel and city recommendations, an interactive Mapbox map for exploration, responsive carousels for showcasing hotels, and a user-friendly interface. Integrated with secure authentication, dynamic data fetching, and a scalable backend API to deliver a seamless travel experience.",
+    githup: "https://github.com/abdelrahmanmostafa7/TourScope",
+    // liveDemo: "",
+  },
+  {
+    id: 1,
+    title: "E-Commerce",
+    img: "/assets/ecommerce.png",
+    desc: "Developed a full-stack e-commerce platform with a responsive React frontend and a Node.js/Express backend. Implemented features like user authentication, product management, shopping cart functionality, and order processing. Utilized MongoDB for data storage and Redux for state management, ensuring a seamless user experience.",
+    githup: "https://github.com/abdelrahmanmostafa7/Full-Stack-E-Commerce",
+    liveDemo: "https://full-stack-e-commerce-neon.vercel.app/",
+  },
+  {
     id: 5,
     title: "Chat App",
     img: "/assets/chatApp.png",
@@ -24,22 +40,6 @@ const ProjectsData = [
     liveDemo: "https://fitness-app-two-pink.vercel.app/",
   },
   
-  {
-    id: 4,
-    title: "Tour Scope",
-    img: "/assets/tourScope.png",
-    desc: "A full-stack MERN application designed for personalized travel planning. Features include AI-powered hotel and city recommendations, an interactive Mapbox map for exploration, responsive carousels for showcasing hotels, and a user-friendly interface. Integrated with secure authentication, dynamic data fetching, and a scalable backend API to deliver a seamless travel experience.",
-    githup: "https://github.com/abdelrahmanmostafa7/TourScope",
-    // liveDemo: "",
-  },
-  {
-    id: 1,
-    title: "Full Stack E-Commerce",
-    img: "/assets/ecommerce.png",
-    desc: "Developed a full-stack e-commerce platform with a responsive React frontend and a Node.js/Express backend. Implemented features like user authentication, product management, shopping cart functionality, and order processing. Utilized MongoDB for data storage and Redux for state management, ensuring a seamless user experience.",
-    githup: "https://github.com/abdelrahmanmostafa7/Full-Stack-E-Commerce",
-    liveDemo: "https://full-stack-e-commerce-neon.vercel.app/",
-  },
 ];
 
 export default ProjectsData;

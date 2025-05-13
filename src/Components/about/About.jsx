@@ -55,12 +55,12 @@ const About = () => {
             animate={isInView ? { x: 0, opacity: 1 } : {}}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            I’m Abdelrahman Mostafa Zaki, a passionate Full-Stack Developer with
+            I’m Abdelrahman Mostafa Zaki, a Full-Stack Developer with
             a strong academic foundation in Computer Science from El Shorouk
             Academy. My technical expertise includes core computing concepts
             such as data structures, algorithms, database design, operating
             systems, and network security—principles that continue to guide how
-            I build scalable, modern web applications.
+            I build scalable, modern websites.
           </motion.p>
           <br />
           <motion.p
@@ -69,15 +69,15 @@ const About = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
           >
             I specialize in the MERN stack (MongoDB, Express.js, React.js, and
-            Node.js) along with Firebase, enabling me to deliver full-stack
+            Node.js) along with Next.js & Firebase, enabling me to deliver full-stack
             solutions that are efficient, responsive, and user-focused. While I
             work across the full stack,
-            <br /> I have a strong passion for front-end development—crafting
+            <br />I have a strong passion for front-end development—crafting
             clean, accessible, and intuitive interfaces based on modern UI/UX
             best practices.
             <br /> On the back end, I build secure and maintainable APIs,
             applying best practices like input validation, JWT/Firebase
-            authentication, and encrypted data handling. I
+            authentication, and encrypted data handling.
           </motion.p>
           <br />
           <motion.p
