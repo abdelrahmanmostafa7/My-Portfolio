@@ -21,30 +21,28 @@ import express from "/assets/express.png";
 import tailwind from "/assets/tailwind.png";
 import three from "/assets/three.png";
 
+const icons = [
+  { src: html, alt: "HTML" },
+  { src: css, alt: "CSS" },
+  { src: tailwind, alt: "Tailwind CSS" },
+  { src: sass, alt: "Sass" },
+  { src: javascript, alt: "JavaScript" },
+  { src: typescript, alt: "TypeScript" },
+  { src: react, alt: "React" },
+  { src: next, alt: "Next.js" },
+  { src: mu5, alt: "Material UI 5" },
+  { src: three, alt: "Three.js" },
+  { src: redux, alt: "Redux" },
+  { src: framer, alt: "Framer Motion" },
+  { src: figma, alt: "Figma" },
+  { src: git, alt: "Git" },
+  { src: node, alt: "Node.js" },
+  { src: express, alt: "Express.js" },
+  { src: mongo, alt: "MongoDB" },
+  { src: firebase, alt: "Firebase" },
+];
 
- const icons = [
-   { src: html, alt: "HTML" },
-   { src: css, alt: "CSS" },
-   { src: tailwind, alt: "Tailwind CSS" },
-   { src: sass, alt: "Sass" },
-   { src: javascript, alt: "JavaScript" },
-   { src: typescript, alt: "TypeScript" },
-   { src: react, alt: "React" },
-   { src: next, alt: "Next.js" },
-   { src: mu5, alt: "Material UI 5" },
-   { src: three, alt: "Three.js" },
-   { src: redux, alt: "Redux" },
-   { src: framer, alt: "Framer Motion" },
-   { src: figma, alt: "Figma" },
-   { src: git, alt: "Git" },
-   { src: node, alt: "Node.js" },
-   { src: express, alt: "Express.js" },
-   { src: mongo, alt: "MongoDB" },
-   { src: firebase, alt: "Firebase" },
- ];
-
-
-//h1 animation 
+//h1 animation
 const listVariants = {
   initial: {
     y: -50,
@@ -126,17 +124,19 @@ const Skills = () => {
             Math.random() > 0.5 ? floatingAnimation1 : floatingAnimation2;
 
           return (
-            <motion.img
-              key={index}
-              src={icon.src}
-              alt={icon.alt}
-              variants={bubbleVariant(randomX, randomY)}
-              initial="initial"
-              animate={isInView ? "animate" : "initial"}
-              className="skillIcon"
-              whileHover={{ scale: 1.1 }}
-              whileInView={floatAnim}
-            />
+            <a href="#experience">
+              <motion.img
+                key={index}
+                src={icon.src}
+                alt={icon.alt}
+                variants={bubbleVariant(randomX, randomY)}
+                initial="initial"
+                animate={isInView ? "animate" : "initial"}
+                className="skillIcon"
+                whileHover={{ scale: 1.1 }}
+                whileInView={floatAnim}
+              />
+            </a>
           );
         })}
       </div>
