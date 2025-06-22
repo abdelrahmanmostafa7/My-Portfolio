@@ -9,11 +9,11 @@ const ProjectsData = [
   },
   {
     id: 4,
-    title: "Tour Scope",
-    img: "/assets/tourScope.png",
-    desc: "A full-stack MERN application designed for personalized travel planning. Features include AI-powered hotel and city recommendations, an interactive Mapbox map for exploration, responsive carousels for showcasing hotels, and a user-friendly interface. Integrated with secure authentication, dynamic data fetching, and a scalable backend API to deliver a seamless travel experience.",
-    githup: "https://github.com/abdelrahmanmostafa7/TourScope",
-    // liveDemo: "",
+    title: "Movie Explorer",
+    img: "/assets/movieExplorer.png",
+    desc: "Movie Explorer is a full-stack movie browser app built with Next.js 15 and powered by the TMDb API. It offers secure authentication, personalized favorites, optimized performance (SSG/SSR), and a modern responsive UI/UX using Tailwind CSS.",
+    githup: "https://github.com/abdelrahmanmostafa7/movie-explorer",
+    liveDemo: "https://movie-explorer-smoky-pi.vercel.app/",
   },
   {
     id: 1,
@@ -39,7 +39,6 @@ const ProjectsData = [
     githup: "https://github.com/abdelrahmanmostafa7/fitnessApp",
     liveDemo: "https://fitness-app-two-pink.vercel.app/",
   },
-  
 ];
 
 export default ProjectsData;
