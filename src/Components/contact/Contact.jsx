@@ -2,6 +2,14 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
+import gitHub from "/assets/gitHup.png";
+import faceBook from "/assets/faceBook.png";
+import WhatsApp from "/assets/whatsApp.png";
+import linkedIn from "/assets/linkedIn.png";
+import cv from "/assets/cv.pdf";
+
+
+
 const listVariants = {
   initial: {
     y: -50,
@@ -78,19 +86,54 @@ const Contact = () => {
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <motion.h1 variants={variants}>Let’s work together</motion.h1>
-          <motion.div className="item" variants={variants}>
-            <h2>Mail</h2>
-            <span>abdelrahmanzaki747@gmail.com</span>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
-            <h2>Address</h2>
-            <span>Cairo,Egypt</span>
-          </motion.div>
-          <motion.div className="item" variants={variants}>
-            <h2>Phone</h2>
-            <span>02 01020309515</span>
-          </motion.div>
+          <motion.h1 variants={variants}>Let’s Contact & work together</motion.h1>
+
+          <div className="contactLinks">
+            <a
+              href="https://github.com/abdelrahmanmostafa7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkWrapper"
+            >
+              <img src={gitHub} alt="GitHub" className="linkImg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abdelrahman-mostafa7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkWrapper"
+            >
+              <img src={linkedIn} alt="LinkedIn" className="linkImg" />
+            </a>
+            <a
+              href="https://wa.link/4x1rd4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkWrapper"
+            >
+              <img src={WhatsApp} alt="What'sApp" className="linkImg" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61577232598315"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="linkWrapper"
+            >
+              <img src={faceBook} alt="faceBook" className="linkImg" />
+            </a>
+            <a href={cv} download="Abdelrahman Mostafa Zaki(FullStack).pdf">
+              <button className="cvBtn">Download CV</button>
+            </a>
+          </div>
+
+          <a
+            className="hoverMessage"
+            href="https://linktr.ee/abdelrahmanzaki7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click To Explore All My Links & Contact
+          </a>
         </motion.div>
         <div className="formContainer">
           <motion.div

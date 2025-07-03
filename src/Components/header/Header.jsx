@@ -6,6 +6,7 @@ import Avatar from "/assets/avatar.png";
 import linkedIn from "/assets/linkedIn.png";
 import gitHub from "/assets/gitHup.png";
 import faceBook from "/assets/faceBook.png";
+import WhatsApp from "/assets/whatsApp.png";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import cv from "/assets/cv.pdf";
@@ -43,6 +44,14 @@ const Header = () => {
             className="linkWrapper"
           >
             <img src={linkedIn} alt="LinkedIn" className="linkImg" />
+          </a>
+          <a
+            href="https://wa.link/4x1rd4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkWrapper"
+          >
+            <img src={WhatsApp} alt="What'sApp" className="linkImg" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=61577232598315"
