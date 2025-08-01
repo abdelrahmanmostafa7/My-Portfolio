@@ -82,7 +82,7 @@
             img {
                 width: 100%;
                 aspect-ratio: 1.6 / 1; // makes every image a square
-                object-fit: cover; // ensures the image fills the box and crops if needed
+                object-fit:fill; // ensures the image fills the box and crops if needed
                 border-radius: 30px;
                 cursor: pointer;
                 border: 5px solid white;

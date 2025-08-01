@@ -17,11 +17,11 @@ const ProjectsData = [
   },
   {
     id: 1,
-    title: "E-Commerce",
-    img: "/assets/ecommerce.png",
-    desc: "Developed a full-stack e-commerce platform with a responsive React frontend and a Node.js/Express backend. Implemented features like user authentication, product management, shopping cart functionality, and order processing. Utilized MongoDB for data storage and Redux for state management, ensuring a seamless user experience.",
-    githup: "https://github.com/abdelrahmanmostafa7/Full-Stack-E-Commerce",
-    liveDemo: "https://full-stack-e-commerce-neon.vercel.app/",
+    title: "Mentra Academy",
+    img: "/assets/mentra.png",
+    desc: "Built and deployed an e-learning platform with Next.js, Express, and MongoDB. Integrated Bunny.net for video hosting, handled backend development and secured VPS deployment.",
+    githup: "https://github.com/abdelrahmanmostafa7",
+    liveDemo: "https://mentraacademy.com/",
   },
   {
     id: 5,
