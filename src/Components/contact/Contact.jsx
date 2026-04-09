@@ -8,8 +8,6 @@ import WhatsApp from "/assets/whatsApp.png";
 import linkedIn from "/assets/linkedIn.png";
 import cv from "/assets/cv.pdf";
 
-
-
 const listVariants = {
   initial: {
     y: -50,
@@ -59,7 +57,7 @@ const Contact = () => {
       e.target,
       {
         publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-      }
+      },
     );
   };
 
@@ -86,7 +84,9 @@ const Contact = () => {
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          <motion.h1 variants={variants}>Let’s Contact & work together</motion.h1>
+          <motion.h1 variants={variants}>
+            Let’s Contact & work together
+          </motion.h1>
 
           <div className="contactLinks">
             <a
@@ -98,7 +98,7 @@ const Contact = () => {
               <img src={gitHub} alt="GitHub" className="linkImg" />
             </a>
             <a
-              href="https://www.linkedin.com/in/abdelrahman-mostafa7/"
+              href="https://www.linkedin.com/in/abdelrahman-mostafa-zaki/"
               target="_blank"
               rel="noopener noreferrer"
               className="linkWrapper"
